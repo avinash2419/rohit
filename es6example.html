@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>multipal example of ES-6</title>
+</head>
+
+<body>
+
+ <!-- <script>
+  //question->Find Largest Number in ES-6.
+  // Here (...) is a spread operator.
+  let arr1=[1,2,3,4];
+  let arr2=[10,20,30,40,...arr1];
+  let arr3=[...arr1,...arr2];
+   var bigest=arr3[0];
+   for(var i=0;i<arr3.length;i++){
+    if(bigest<arr3[i]){
+     bigest=arr3[i];
+    }
+   }
+   console.log(bigest);
+ </script> -->
+
+
+<!-- <script>
+//array Destructuring example->and array inside array like that--[[]].
+//let stu=["Amit","prayagraj","25"];
+let stu=["Amit","prayagraj","25"["Maths","Hindi","English"]];
+
+//this is treditional approch to print this.
+// let name=stu[0];
+// let city=stu[1];
+// let age=stu[2];
+//console.log(name,city,age);
+
+// i have another method to print this.
+// let[name,city,age]=stu;
+// console.log(age);
+
+//another method to print this.
+let[name,city,age,[Maths,Hindi,English]]=stu;
+console.log(name);
+ </script> -->
+
+
+ <!-- <script>
+  //Example of Template literals->
+  let a=100;
+  let b=200;
+  let c=a+b;
+  //console.log("Sum of "+a+"and"+b+"is eqaul to="+c);//we this type coding method a milion years ago...
+  console.log(`Sum of ${a} And ${b} is equal to ${c}`);// this is template literals.
+ </script> -->
+
+
+  <!-- <script>
+   //event example in js.
+   function Sum(){
+    let a=100;
+    let b=200;
+    let c=a+b;
+    console.log(c);
+   }
+  </script>  
+  <body Onload="Sum();"></body> -->
+
+
+
+  <!-- <script>
+   //Example of default paremeter in Es-6.
+   function test(x=0,y=0){// this is default parameters.
+    console.log(x+y);
+   }
+   test(10,20);
+  </script> -->
+
+
+
+  <!-- <script>
+   //example in Es-6.
+   // i this example we check first 2 largest and last 2 sum. 
+   function Sum(a,b,...x){
+    let sum=0;
+    if(a>b)
+    console.log("largest"+a);
+    else
+    console.log(`largest ${b}`);
+    for(let i=0;i<x.length;i++){
+     sum=sum+x[i];
+    }
+    console.log("sum is ="+sum);
+   }
+   Sum(10,20,30,40);
+  </script> -->
+
+
+
+  <!-- <script>
+  //exapmle of spread operator.
+  let arr1=[1,2,3,4];
+  let arr2=[10,20,30,40,...arr1];
+  let arr3=[...arr1,...arr2];
+  console.log(arr1);  //output [1, 2, 3, 4]
+  console.log(arr2);  //output [10, 20, 30, 40, 1, 2, 3, 4]
+  console.log(arr3);  //output [1, 2, 3, 4, 10, 20, 30, 40, 1, 2, 3, 4]
+  </script> -->
+
+
+  <!-- <script>
+   //Example of object Destructuring.
+   let stu={name:"Amit",age:25,city:"prayagraj"};
+   let {name,age,city}=stu;
+   console.log(name);
+   console.log(age);
+   console.log(city);
+  </script> -->
+
+
+  <!-- <script>
+   //what is Aliace-> Aliace is the name changing method in object destructuring.
+   //Example of Aliace.
+   let stu={name:"Amit",age:25,city:"prayagraj"};
+   
+    let{name,age,city}=stu;
+   // console.log(name);
+   // console.log(age);
+   // console.log(city);
+
+   let{name:n,age:a,city:c}=stu;
+   console.log(n);
+   console.log(a);
+   console.log(c);
+  </script> -->
+
+
+  <!-- <script>
+   //Another example of Aliace
+   let stu={name:"Amit",city:"prayagraj",age:25,
+        subject:{subject1:"maths",subject2:"english"}};
+   // let{name,city,age}=stu;
+   // console.log(name);
+   // console.log(age);
+   let{name:n,city:c,age:a,gender="male",subject:{subject1,subject2}}=stu;
+   console.log(n);
+   console.log(c);
+   console.log(a);
+   console.log(gender);
+   console.log(subject1);
+   console.log(subject2);
+  </script> -->
+
+
+
+  <!-- <script>
+   //Example of Arrow function in Es-6.
+   function hello(){
+    console.log("hello");
+   }
+   hello();
+
+   let hello1=function(){
+   console.log("Es5 Hello");
+   }
+   hello1();
+
+   let hello2=(firstname,lastname)=>(`function is ${firstname} and ${lastname}`);
+   console.log(hello2("Avinash","kumar "));
+  </script> -->
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
