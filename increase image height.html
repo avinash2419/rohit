@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>increase image height just double</title>
+</head>
+<body align="center">
+  <img src="e.jpg.jpg" id="img" width="100" alt="eye image"/><br>
+  <input type="button" onClick="zoomin()" value="ZoomIn"/>
+  <input type="button" onClick="zoomout()" value="ZoomOut"/>
+
+</body>
+
+<script>
+
+  function zoomin(){
+    var myimg=document.getElementById("img");
+    var currWidth=myimg.clientWidth;
+    if(currWidth==500){
+      alert("maximum zoom in level reached");
+    }else{
+      myimg.style.width=(currWidth+50)+"px";
+    }
+  }
+
+  function zoomout(){
+    var myimg=document.getElementById("img");
+    var currWidth=myimg.clientWidth;
+    if(currWidth==100){
+      alert("maximum zoom out level reached");
+    }else{
+      myimg.style.width=(currWidth-50)+"px";
+    }
+  }
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
